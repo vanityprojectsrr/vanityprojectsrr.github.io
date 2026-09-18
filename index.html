@@ -219,6 +219,9 @@
     font-size:.78rem;letter-spacing:.1em;color:var(--mute);
   }
   footer nav{display:flex;gap:1.5rem;flex-wrap:wrap;}
+  .footer-brand{display:flex;flex-direction:column;gap:.45rem;line-height:1.35;}
+  .footer-brand a{color:inherit;text-decoration:none;}
+  .footer-brand a:hover{text-decoration:underline;text-underline-offset:.16em;}
 
   .mock-flag{
     font-size:.68rem;letter-spacing:.18em;color:var(--mute);
@@ -668,7 +671,10 @@
 </main>
 
 <footer>
-  <span>Vanity Projects &mdash; AI artist production</span>
+  <div class="footer-brand">
+    <span>Vanity Projects &mdash; AI artist production</span>
+    <a href="https://www.randrentertainment.com" target="_blank" rel="noopener noreferrer">R&amp;R Entertainment</a>
+  </div>
   <nav>
     <a href="#roster">Roster</a>
     <a href="#shows">On air</a>
@@ -737,4 +743,3 @@
 </script>
 </body>
 </html>
-
