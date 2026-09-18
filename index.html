@@ -405,7 +405,23 @@
 .slim-cast-grid>div:nth-child(4n+2),.slim-cast-grid>div:nth-child(4n+3),.slim-cast-grid>div:nth-child(4n+4){padding-left:.9rem}
 .slim-cast-grid strong{font-size:.82rem}
 .slim-cast-grid span{font-size:.58rem;line-height:1.4}
-</style></head>
+</style>
+<style>
+.roster-card-link{
+  display:block;
+  color:inherit;
+  text-decoration:none;
+  cursor:pointer;
+}
+.roster-card-link h3{color:inherit;}
+.roster-card-link:hover h3{
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:.14em;
+}
+</style>
+
+</head>
 <body>
 
 <header class="masthead">
@@ -470,7 +486,7 @@
       <a class="roster-card roster-card-link" href="indhyrah/"><h3>Indhyrah</h3><p>R&amp;B / Talk show</p></a>
       <article class="roster-card"><h3>Willow J</h3><p>R&amp;R General Manager</p></article>
       <article class="roster-card"><h3>Korin <small>Oluwa</small></h3><p>Afrobeats / Nigeria</p></article>
-      <article class="roster-card"><h3>Layla <small>Grant</small></h3><p>Altpop / Singer</p></article>
+      <a class="roster-card roster-card-link" href="layla/"><h3>Layla <small>Grant</small></h3><p>Altpop / Singer</p></a>
       <article class="roster-card"><h3>Dove</h3><p>Latin American Singer</p></article>
       <article class="roster-card"><h3>Robert <small>Ross</small></h3><p>Manager &amp; Entertainment Attorney</p></article>
     </div>
