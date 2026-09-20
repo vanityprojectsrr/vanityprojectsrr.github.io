@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Press — Vanity Projects</title>
+<meta name="description" content="Press releases from Vanity Projects and its entertainment partners.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#E9E7E2;--card:#F5F4F1;--ink:#1E1D1A;--graphite:#3A3833;--mute:#7C766C;--bronze:#6B6254;--line:rgba(30,29,26,.13);--line-soft:rgba(30,29,26,.08);--serif:"Bodoni Moda","Didot","Bodoni MT",Georgia,"Times New Roman",serif;--sans:"Jost","Futura","Century Gothic",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;--pad:clamp(1.25rem,5vw,5.5rem)}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--graphite);font-family:var(--sans);font-weight:300;font-size:clamp(1rem,.95rem + .2vw,1.075rem);line-height:1.65}a{color:inherit;text-decoration:none}:focus-visible{outline:1px solid var(--bronze);outline-offset:4px}h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;margin:0;color:var(--ink)}p{margin:0 0 1.1em;max-width:68ch}
+.masthead{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:1.1rem var(--pad);background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-soft)}
+.wordmark{font-family:var(--serif);font-size:1.05rem;letter-spacing:.34em;white-space:nowrap;color:var(--ink)}.wordmark span{color:var(--bronze)}
+.masthead nav{display:flex;gap:2rem;font-size:.86rem;letter-spacing:.06em;color:var(--mute)}.masthead nav a:hover{color:var(--ink)}
+.back{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}.back:hover{color:var(--ink)}
+.menu-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:2.1rem;height:2.1rem;background:none;border:0;cursor:pointer;padding:0}.menu-toggle span{display:block;height:1px;width:100%;background:var(--ink)}
+@media(max-width:880px){.menu-toggle{display:flex;order:3}.masthead nav{display:flex;flex-direction:column;gap:0;position:fixed;inset:0 0 0 auto;top:var(--mh-h,64px);width:min(80vw,320px);height:calc(100vh - var(--mh-h,64px));background:var(--card);border-left:1px solid var(--line-soft);padding:1rem var(--pad);transform:translateX(100%);transition:transform .3s ease;overflow-y:auto}.masthead nav.is-open{transform:translateX(0)}.masthead nav a{padding:1rem 0;border-bottom:1px solid var(--line-soft);font-size:1rem}.masthead nav .nav-cta{display:block;margin-top:1rem;border:1px solid var(--line);border-radius:999px;text-align:center;padding:.8rem 1rem;font-size:.9rem;letter-spacing:.06em}.back{display:none}}
+.press-page{padding:clamp(4rem,9vw,8rem) var(--pad) clamp(5rem,10vw,9rem)}.press-wrap{max-width:1000px;margin:0 auto}.eyebrow{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze);margin-bottom:1.2rem}.press-head{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.6rem 0 2.4rem}.press-head h1{font-size:clamp(2.8rem,6vw,6.2rem);line-height:.96;max-width:14ch}.subtitle{font-family:var(--serif);font-style:italic;font-size:clamp(1.05rem,1.4vw,1.35rem);line-height:1.35;color:var(--bronze);max-width:50ch;margin-top:1.4rem}.release-meta{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-top:1.4rem;font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}.release-body{padding-top:3.5rem}.release-body .dateline{font-size:.67rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze);margin-bottom:2rem}.release-body h2{font-family:var(--sans);font-weight:400;font-size:clamp(1.55rem,2.3vw,2.4rem);line-height:1.08;letter-spacing:-.01em;max-width:28ch;margin-bottom:2rem}.release-body p{font-size:clamp(.96rem,1vw,1.06rem);line-height:1.75;color:var(--graphite);max-width:72ch;margin-bottom:1.35rem}.release-body .lead{font-family:var(--serif);font-size:clamp(1.15rem,1.5vw,1.4rem);line-height:1.55;color:var(--ink);max-width:58ch}.release-block{margin-top:3.5rem;padding-top:1.4rem;border-top:1px solid var(--line)}.release-block h3{font-family:var(--sans);font-size:.7rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;margin-bottom:.8rem}.press-contact{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line-soft)}.press-contact p{margin:0}.press-contact a{text-decoration:underline;text-underline-offset:.16em}.download-row{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin-top:3rem;padding:1rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.download-row span{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--mute)}.download-link{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:.25rem}.download-link:hover{color:var(--bronze);border-color:var(--bronze)}
+footer{padding:2.5rem var(--pad);border-top:1px solid var(--line-soft);display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;font-size:.78rem;letter-spacing:.1em;color:var(--mute)}footer nav{display:flex;gap:1.5rem;flex-wrap:wrap}footer a:hover{color:var(--ink)}
+@media(max-width:640px){.wordmark{font-size:.85rem;letter-spacing:.2em}.press-page{padding-top:3.5rem}.press-head{padding-bottom:1.8rem}.press-head h1{font-size:clamp(2.6rem,12vw,4rem)}.release-body{padding-top:2.5rem}.release-body h2{font-size:1.5rem}.download-row{align-items:flex-start;flex-direction:column;gap:.8rem}}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <a class="wordmark" href="../">VANITY<span>&middot;</span>PROJECTS</a>
+  <nav id="primary-nav">
+    <a href="../#roster">Roster</a><a href="../#shows">On air</a><a href="../#press">Press</a><a href="../#process">Process</a><a href="../#clients">For clients</a><a href="../#about">About</a><a class="nav-cta" href="../#enquire">Start a project</a>
+  </nav>
+  <a class="back" href="../">&larr; Back to Vanity Projects</a>
+  <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+<main class="press-page">
+  <article class="press-wrap">
+    <div class="eyebrow">R&amp;R Entertainment &middot; Press Release</div>
+    <header class="press-head">
+      <h1>The Slim Experience World Tour 2026</h1>
+      <p class="subtitle">The World's First Solely Virtual, AI-Generated Concert Experience</p>
+      <div class="release-meta"><span>R&amp;R Entertainment PLLC</span><span>For Immediate Release</span></div>
+    </header>
+    <div class="release-body">
+      <div class="dateline">Fresh off Lagos</div>
+      <h2>Fresh Off Lagos, The Slim Experience World Tour Sets Its Sights On Manila</h2>
+      <p class="lead">The world's first solely virtual, AI-generated concert tour brings its sound, its energy, and its movement to the Philippines.</p>
+      <p>The Slim Experience World Tour 2026 just wrapped an unforgettable stop in Lagos, and the momentum isn't slowing down. Next stop: Manila, bringing the full spectrum of culture, sound, and vibes to the city and the people of the Philippines.</p>
+      <p>The Slim Experience is the first tour of its kind: a fully virtual, AI-generated concert experience built exclusively off real-time analytics from DistroKid, the digital service provider recently acquired by CVC Capital Partners in a deal reportedly valued near $2 billion. Powered by the hits of DistroKid and presented with the support of premier ticketing partner Promotix, the tour turns raw streaming data into a live, immersive experience unlike anything else on the road today.</p>
+      <p>Lagos showed what happens when that data-driven artistry meets real, on-the-ground energy, and the response was electric. It confirmed what The Slim Experience has been building toward from day one: this is a global cultural moment, and every stop adds its own flavor to the story.</p>
+      <p>Manila is next, and the anticipation is already building. The Philippines has one of the most passionate, plugged-in fan communities in the world, and the team is bringing a show designed to match that energy, filtered through the culture and spirit of Manila itself.</p>
+      <p>More details on the Manila stop, including the full artist lineup and event specifics, will be announced soon. Stay close.</p>
+      <section class="release-block">
+        <h3>About The Slim Experience World Tour</h3>
+        <p>The Slim Experience World Tour 2026 is a 12-stop global rollout and the first solely virtual, AI-generated concert tour, built off real-time DistroKid analytics and bringing next-generation AI artistry to cities worldwide.</p>
+      </section>
+      <section class="press-contact">
+        <h3>Press Contact</h3>
+        <p>All press inquiries: <a href="mailto:robert@randrentertainment.com">robert@randrentertainment.com</a></p>
+      </section>
+      <div class="download-row"><span>Official release</span><a class="download-link" href="../press-release-slim-experience-manila.pdf" download>Download PDF &rarr;</a></div>
+    </div>
+  </article>
+</main>
+<footer><span>Vanity Projects &mdash; AI artist production</span><nav><a href="../#roster">Roster</a><a href="../#shows">On air</a><a href="../#press">Press</a><a href="../#about">About</a><a href="../#enquire">Contact</a></nav><span>&copy; 2026</span></footer>
+<script>
+const masthead=document.querySelector('.masthead'),toggle=document.getElementById('menu-toggle'),nav=document.getElementById('primary-nav');
+function setH(){document.documentElement.style.setProperty('--mh-h',masthead.offsetHeight+'px')}setH();window.addEventListener('resize',setH);
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('is-open');toggle.setAttribute('aria-expanded',open?'true':'false');toggle.setAttribute('aria-label',open?'Close menu':'Open menu')});nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('is-open');toggle.setAttribute('aria-expanded','false')}});
+</script>
+</body>
+</html>
