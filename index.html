@@ -248,6 +248,26 @@
   .send:hover{background:var(--ink);color:var(--paper);}
   .form-note{font-size:.8rem;color:var(--mute);min-height:1.4em;margin:.4rem 0 0;}
 
+  /* ---------- press ---------- */
+  .press-section{background:var(--paper);}
+  .press-feature{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.55fr);gap:clamp(2.5rem,7vw,7rem);padding-top:1.25rem;border-top:1px solid var(--line-soft);align-items:end;}
+  .press-feature-main{max-width:58rem;}
+  .press-meta{display:block;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--bronze);margin-bottom:1rem;}
+  .press-feature h2{font-size:clamp(2.15rem,4.1vw,4.7rem);line-height:.99;max-width:15ch;margin:0;}
+  .press-feature-side{max-width:30rem;justify-self:end;}
+  .press-feature-side p{font-size:.92rem;color:var(--mute);max-width:34ch;margin:0 0 1.5rem;}
+  .press-link{display:inline-flex;align-items:center;gap:.7rem;border-bottom:1px solid var(--ink);padding-bottom:.25rem;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink);}
+  .press-link span{font-size:1rem;transition:transform .25s;}
+  .press-link:hover span{transform:translateX(.25rem);}
+  @media(max-width:820px){
+    .press-feature{grid-template-columns:1fr;gap:1.75rem;}
+    .press-feature-side{justify-self:start;max-width:38rem;}
+  }
+  @media(max-width:680px){
+    .press-feature h2{font-size:clamp(2.05rem,10vw,3.5rem);max-width:13ch;}
+    .press-feature-side p{font-size:.88rem;}
+  }
+
   /* ---------- footer ---------- */
   footer{
     padding:2.5rem var(--pad);border-top:1px solid var(--line-soft);
@@ -463,6 +483,7 @@
   <nav id="primary-nav">
     <a href="#roster">Roster</a>
     <a href="#shows">On air</a>
+    <a href="#press">Press</a>
     <a href="#process">Process</a>
     <a href="#clients">For clients</a>
     <a href="#about">About</a>
@@ -560,6 +581,20 @@
           <div class="show-meta"><h3>The Sit Down</h3><span class="show-type">Conversations</span></div>
           <p>Long-form conversations. No small talk.</p>
         </article>
+    </div>
+  </section>
+
+  <section class="band press-section" id="press">
+    <div class="section-kicker">Press</div>
+    <div class="press-feature">
+      <div class="press-feature-main">
+        <span class="press-meta">R&amp;R Entertainment &middot; Press Release</span>
+        <h2>Fresh off Lagos,<br>The Slim Experience World Tour<br>sets its sights on Manila.</h2>
+      </div>
+      <div class="press-feature-side">
+        <p>The world's first solely virtual, AI-generated concert tour brings its sound, its energy, and its movement to the Philippines.</p>
+        <a class="press-link" href="press/">Read press release <span>&rarr;</span></a>
+      </div>
     </div>
   </section>
 
@@ -732,6 +767,7 @@
   <nav>
     <a href="#roster">Roster</a>
     <a href="#shows">On air</a>
+    <a href="#press">Press</a>
     <a href="#process">Process</a>
     <a href="#clients">For clients</a>
     <a href="#about">About</a>
