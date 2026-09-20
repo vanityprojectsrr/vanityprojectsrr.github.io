@@ -82,6 +82,7 @@
 
   @media (max-width:880px){
     .menu-toggle{display:flex;order:3;}
+    .masthead .enquire-link{display:none;}
     .masthead nav{
       display:flex;flex-direction:column;gap:0;position:fixed;inset:0 0 0 auto;top:var(--mh-h,64px);
       width:min(80vw,320px);height:calc(100vh - var(--mh-h,64px));background:var(--card);
@@ -90,7 +91,14 @@
     }
     .masthead nav.is-open{transform:translateX(0);}
     .masthead nav a{padding:1rem 0;border-bottom:1px solid var(--line-soft);font-size:1rem;}
-    .masthead .enquire-link{order:2;}
+    .masthead nav .nav-cta{
+      display:block;margin-top:1rem;border:1px solid var(--line);border-radius:999px;
+      text-align:center;padding:.8rem 1rem;font-size:.9rem;letter-spacing:.06em;
+    }
+  }
+  @media (min-width:881px){ .nav-cta{display:none; } }
+  @media (max-width:400px){
+    .wordmark{font-size:.85rem;letter-spacing:.2em;}
   }
 
   /* ---------- hero / the slate ---------- */
@@ -458,6 +466,7 @@
     <a href="#process">Process</a>
     <a href="#clients">For clients</a>
     <a href="#about">About</a>
+    <a href="#enquire" class="nav-cta">Start a project</a>
   </nav>
   <a class="enquire-link" href="#enquire">Start a project</a>
   <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
@@ -819,3 +828,4 @@
 </script>
 </body>
 </html>
+
